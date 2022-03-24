@@ -1,0 +1,26 @@
+<div class="container">
+<table class="table table-bordered">
+  <thead>
+    <th>ID</th>
+    <th>Placa</th>
+    <th>Nombre</th>
+    <th>Fecha</th>
+    <th>Tipo</th>
+    <th></th>
+    <th></th>
+  </thead>
+  <tbody>
+<tr *ngFor="let item of consulta[0]">
+  <td>{{item.parqueoID}}</td>
+  <td>{{item.placa}}</td>
+  <td>{{item.nombre}}</td>
+  <td>{{item.fechaRegistro}}</td>
+  <td>{{item.tipoVehiculo}}</td>
+  <td><button class="btn btn-primary btn-sm" role="button" (click)="Eliminar(item.parqueoID)">Eliminar</button></td>
+  <td><button class="btn btn-primary btn-sm" role="button" (click)="Editar(item.parqueoID)">Editar</button></td>
+</tr>
+</tbody>
+</table>
+
+<button type="button" class="btn btn-primary btn-sm" (click)="Agregar()" style="padding-left: 2.5rem; padding-right: 2.5rem;">Agregar</button>
+</div>
