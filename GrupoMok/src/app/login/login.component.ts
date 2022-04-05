@@ -4,6 +4,7 @@ import { loginI } from '../Models/login.interface';
 import { AuthService } from '../Services/AuthService';
 import {Router} from '@angular/router';
 
+//prueba de commit en git
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
